@@ -23,8 +23,10 @@ def main():
         choice = input("1.Add movies: \n2.Which movie would you like to remove?\nchoice: ")
         if choice == "1":
             add_movie_list()
+            print(movies)
         elif choice =="2" :
             remove()
+            print(movies)
         else:
             break
 

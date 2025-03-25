@@ -1,17 +1,19 @@
 contacts = []
 
 def get_name_and_number():
-    names = input("Enter your name: ")
-    phone_number = input("Enter your phone number: ")
-    contacts.append((names,phone_number))
+    name = input("Enter your name: ").strip()
+    number = input("Enter your phone number: ").strip()
+    contacts.append((name, number))
 
 def search_option():
     search = input("search a contact: ")
-    for contact in contacts:
-        if search == contact:
-            print(f"Name: {contact}:Phone: {contact}")
-    else:
-        print(f"{search} not found")
+
+    for name, number in contacts:
+        if search == name:
+            print(f"Name is {search} and Contact is {number}")
+
+
+
 
 def display_all():
     contacts.sort()

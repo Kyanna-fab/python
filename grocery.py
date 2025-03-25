@@ -1,5 +1,5 @@
 grocery = []
-
+marks = []
 def making_the_list():
     list = input("Enter items to your grocery list: ").strip()
     grocery.append((list))

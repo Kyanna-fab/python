@@ -1,12 +1,16 @@
+from sys import api_version
+
 student = []
+marks = []
 
 def input_names_and_marks():
   names = input("Enter student name: ").split()
-  marks = float(input("Enter student's marks: "))
-  student.append((names , marks))
+  mark = float(input("Enter student's marks: "))
+  student.append(names)
+  marks.append(mark)
 
-marks = ()
-average = sum(marks) / len(marks)
+average = sum(marks)/len(marks)
+
 
 def displaying_high_and_low_mark():
   highest = max(marks)
